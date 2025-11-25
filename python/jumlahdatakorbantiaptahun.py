@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import textwrap
 
-FILE_PATH = "../data/data-violent-sexual-crime.xlsx"
+FILE_PATH = "data/data-violent-sexual-crime.xlsx"
 
 # Membaca dataset dari file
 df = pd.read_excel(FILE_PATH, skiprows=2)
@@ -32,7 +32,7 @@ plt.figure(figsize=(16, 9))
 bars = plt.bar(wrapped_labels, values_million.values, color='pink')
 
 # Judul grafik
-plt.title("Perbandingan jumlah data korban tiap tahun top 5 ", fontsize=20, pad=20)
+plt.title("Perbandingan jumlah kategori kejahatan terbanya top 5 (2003 - 2023) ", fontsize=20, pad=20)
 
 # Label sumbu X dan Y
 plt.xlabel("Kategori Kejahatan", fontsize=14)

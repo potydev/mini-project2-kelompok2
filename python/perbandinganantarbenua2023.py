@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Baca file
-file_path = "../data/data-violent-sexual-crime.xlsx"
+file_path = "data/data-violent-sexual-crime.xlsx"
 df = pd.read_excel(file_path, skiprows=2)
 
 # Bersihkan nama kolom
@@ -30,5 +30,5 @@ plt.pie(
 
 plt.title("Proporsi Kasus Kekerasan Seksual per Benua (2023) dalam Jutaan", fontsize=16, fontweight='bold')
 plt.tight_layout()
-plt.savefig('../perbandingan antar benua.png')
+plt.savefig('perbandingan antar benua.png')
 plt.show()

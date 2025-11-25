@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Baca file
-file_path = "../data/data-violent-sexual-crime.xlsx"
+file_path = "data/data-violent-sexual-crime.xlsx"
 df = pd.read_excel(file_path, skiprows=2)
 
 # --- Perbaikan penting: Hapus spasi pada nama kolom ---

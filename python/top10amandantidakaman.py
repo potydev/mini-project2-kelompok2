@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-FILE_PATH = "../data/data-violent-sexual-crime.xlsx"
+FILE_PATH = "data/data-violent-sexual-crime.xlsx"
 
 # 1. Baca file Excel
 df = pd.read_excel(FILE_PATH, skiprows=2)
@@ -47,5 +47,5 @@ for bar in bars_bottom:
     axs[1].text(bar.get_x() + bar.get_width() / 2, height + 0.05, f"{height} Juta", ha='center', fontsize=10)
 
 plt.tight_layout()
-plt.savefig("../top10 aman dan tidak aman.png")
+plt.savefig("top10 aman dan tidak aman.png")
 plt.show()
